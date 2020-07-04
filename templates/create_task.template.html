@@ -1,0 +1,22 @@
+{% extends 'layout.template.html'%}
+
+{%block title%}Create New Task{%endblock%}
+
+{%block content%}
+<form method="POST">
+    <h1>Create New Task</h1>
+    <div>
+        <label for="">Task Name:</label>
+        <input class="form-control" type="text" name="task-name">
+    </div>
+    <div>
+        <label for="">Due Date:</label>
+        <input class="form-control" type="date" name="due-date">
+    </div>
+    <div>
+        <label for="">Comments:</label>
+        <textarea class="form-control" name="comments" id="" cols="30" rows="10"></textarea>
+    </div>
+    <input type="submit" class="btn btn-primary mt-2" name="" id="">
+</form>
+{%endblock%}
